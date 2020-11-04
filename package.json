@@ -1,0 +1,25 @@
+{
+  "name": "javascript-ud-t22-nodejs",
+  "version": "1.0.0",
+  "description": "Proyecto con Node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-jv/JavaScript-ud-T22-NodeJS.git"
+  },
+  "author": "dev-jv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-jv/JavaScript-ud-T22-NodeJS/issues"
+  },
+  "homepage": "https://github.com/dev-jv/JavaScript-ud-T22-NodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
