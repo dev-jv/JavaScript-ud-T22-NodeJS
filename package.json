@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/dev-jv/JavaScript-ud-T22-NodeJS.git"
   },
+  "type" : "module",
   "author": "dev-jv",
   "license": "ISC",
   "bugs": {
