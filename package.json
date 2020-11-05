@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/dev-jv/JavaScript-ud-T22-NodeJS.git"
   },
-  "type" : "module",
+  "type": "module",
   "author": "dev-jv",
   "license": "ISC",
   "bugs": {
@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/dev-jv/JavaScript-ud-T22-NodeJS#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
   }
 }
+
+
