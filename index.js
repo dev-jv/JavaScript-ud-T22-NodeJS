@@ -8,6 +8,14 @@ const port = process.env.PORT || 4000;
 
 app.set('view engine', 'pug') // Habilitar PUG
 
+app.use((req, res, next) => {
+    // res.locals.unaVariable = 'Una nueva variable';
+    // console.log(res.locals);
+    const year = new Date();
+    res.locals.actualYear = year.getFullYear();
+    next();
+});
+
 app.use(express.static('public')); // Define la carp. public
 
 app.use('/', router); // Agrega el router
