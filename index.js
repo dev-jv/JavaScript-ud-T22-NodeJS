@@ -13,6 +13,7 @@ app.use((req, res, next) => {
     // console.log(res.locals);
     const year = new Date();
     res.locals.actualYear = year.getFullYear();
+    res.locals.nombreSitio = "Agencia de Viajes";
     next();
 });
 
