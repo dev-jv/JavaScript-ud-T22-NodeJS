@@ -21,6 +21,7 @@ block contenido
 
 
                                 | #{viaje.fecha_ida} - #{viaje.fecha_vuelta}
+
                             P
                                 svg.icon.icon-tabler.mr-2.icon-tabler-users(xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewbox='0 0 24 24' stroke-width='1.5' stroke='#FFC107' fill='none' stroke-linecap='round' stroke-linejoin='round')
                                     path(stroke='none' d='M0 0h24v24H0z' fill='none')
@@ -34,6 +35,5 @@ block contenido
                             P= viaje.descripcion.substr(0, 100) + '...'
 
                             a(href=`viajes/${viaje.slug}`, class="pt-1 pb-1 btn btn-success btn-block") Más información   
-
 
 
