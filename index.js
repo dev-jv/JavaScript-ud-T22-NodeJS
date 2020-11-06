@@ -21,6 +21,8 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use(express.urlencoded({extend: true})); // Agregar body parser par leer los datos del formulario
+
 app.use(express.static('public')); // Define la carp. public
 
 app.use('/', router); // Agrega el router
