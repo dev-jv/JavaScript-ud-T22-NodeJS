@@ -4,19 +4,26 @@ block contenido
     main.container.mt-5
         h1.text-center.mt-5 #{pagina}
         .row
-            h2.d-block.w-100.text-center Agrega un Testimonio
+            .col-md-12
+                h2.d-block.w-100.text-center Agrega un Testimonio
+                //- p= JSON.stringify(errores)
+
+                if(errores)
+                    each error in errores
+                        .alert.col.alert-danger.text-center= error.mensaje
+                        
             .row.justify-content-center.col
                 .col-md-8
                     form(action="/testimoniales" method="POST")
                         .form-group
                             label(for="nombre") Nombre
-                            input#nombre.form-control(type="text", placeholder="Tu Nombre", name="nombre")
+                            input#nombre.form-control(type="text", placeholder="Tu Nombre", name="nombre", value= nombre)
                         .form-group
                             label(for="correo") Correo Electrónico
-                            input#correo.form-control(type="text", placeholder="Tu Correo", name="correo")
+                            input#correo.form-control(type="text", placeholder="Tu Correo", name="correo", value= correo)
                         .form-group
                             label(for="mensaje") Correo Electrónico
-                            textarea#mensaje.form-control(name="mensaje", placeholder="Tu Mensaje", rows= 4)
+                            textarea#mensaje.form-control(name="mensaje", placeholder="Tu Mensaje", rows= 4)= mensaje
 
                         input.btn.py-2.btn-success.btn-block(type="submit", value="enviar")
                         
