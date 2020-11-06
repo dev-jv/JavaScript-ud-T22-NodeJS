@@ -19,3 +19,4 @@ const db = new Sequelize('agenciaviajes', 'root', '',{
 export default db;
 
 
+

@@ -32,3 +32,4 @@ export const Viaje = db.define('viajes', {
 })
 
 
+
