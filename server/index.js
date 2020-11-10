@@ -11,7 +11,7 @@ db.authenticate()
     .then(() => console.log('Base de datos conectada'))
     .catch( error => console.log(error) );
 
-const port = process.env.PORT || 4000;
+// const port = process.env.PORT || 4000;
 
 app.set('view engine', 'pug') // Habilitar PUG
 
@@ -31,11 +31,12 @@ app.use(express.static('public')); // Define la carp. public
 app.use('/', router); // Agrega el router
 
 const host = process.env.HOST || '0.0.0.0';
-// const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 
 app.listen(port, host , ()=>{ 
     console.log(`El Servidor esta funcionando en el puerto ${port}`)
 })
+
 
 
