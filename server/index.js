@@ -24,7 +24,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(express.urlencoded({extend: true})); // Agregar body parser para leer los datos del formulario
+app.use(express.urlencoded({extended:true})); // Agregar body parser para leer los datos del formulario
 
 app.use(express.static('public')); // Define la carp. public
 
